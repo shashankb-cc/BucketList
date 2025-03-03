@@ -7,33 +7,19 @@
 
 import SwiftUI
 
-struct User: Identifiable ,Comparable{
-    let id = UUID()
-    var firstName: String
-    var lastName: String
-    
-    
-    //operator overloading,
-    static func <(lhs:User,rhs:User)->Bool {
-        lhs.lastName < rhs.lastName
-    }
-
-}
-
 struct ContentView: View {
-    let users = [
-        User(firstName: "Arnold", lastName: "Rimmer"),
-        User(firstName: "Kristine", lastName: "Kochanski"),
-        User(firstName: "David", lastName: "Lister"),
-    ].sorted()
-    
-//        .sorted{
-//            $0.lastName < $1.lastName
-//        }
-
     var body: some View {
-        List(users) { user in
-            Text("\(user.lastName), \(user.firstName)")
+        Button("Read and Write") {
+            let data = Data("Test Hello".utf8)
+            let url = URL.documentsDirectory.appending(path: "message.txt")
+            
+            do {
+                try data.write(to: url,options: [.atomic,.completeFileProtection])
+                let input = try String(contentsOf: url)
+                print(input)
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }
