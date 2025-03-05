@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99197DA72D78133D005F08B8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99197DA62D78133D005F08B8 /* Result.swift */; };
 		99E829FD2D756257006502E8 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E829FC2D756257006502E8 /* BucketListApp.swift */; };
 		99E829FF2D756257006502E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E829FE2D756257006502E8 /* ContentView.swift */; };
 		99E82A012D75625B006502E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E82A002D75625B006502E8 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99197DA62D78133D005F08B8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		99E829F92D756257006502E8 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E829FC2D756257006502E8 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		99E829FE2D756257006502E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				99E82A022D75625B006502E8 /* Preview Content */,
 				99E82A0E2D757E2D006502E8 /* Location.swift */,
 				99E82A102D758E63006502E8 /* EditView.swift */,
+				99197DA62D78133D005F08B8 /* Result.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99197DA72D78133D005F08B8 /* Result.swift in Sources */,
 				99E829FF2D756257006502E8 /* ContentView.swift in Sources */,
 				99E82A112D758E63006502E8 /* EditView.swift in Sources */,
 				99E82A0B2D75717A006502E8 /* MapView.swift in Sources */,
